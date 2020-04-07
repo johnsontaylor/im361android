@@ -12,13 +12,17 @@ class MainActivity : AppCompatActivity() {
 
         val textView = findViewById<TextView>(R.id.text_view)
         textView.text = "Fizz Fizz Buzz Buzz ${fizzBuzz()}"
+        val result = fizzBuzz(3 )
+        print(result)
     }
 
-    private fun fizzBuzz() {
-        for (i in 1..100) {
-            if (i % 3 == 0) print("SheLookedSurprised ")
-            if (i % 5 == 0) print("IToldMyWifeSheWasDrawing ")
-            if (i % 3 != 0 && i % 5 !=0 ) print("HerEyebrowsTooHigh")
+    fun fizzBuzz(number :Int) :String {
+        return when {
+            number % 3 == 0 && number % 5 ==0 -> "SheLookedSurprised"
+            number % 3 == 0 -> "IToldMyWifeSheWasDrawing"
+            number % 5 == 0 -> "HerEyebrowsTooHigh"
+        else -> "HAHAHA"
+
         }
         }
 
