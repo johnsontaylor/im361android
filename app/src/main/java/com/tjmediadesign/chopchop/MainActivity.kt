@@ -11,12 +11,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val textView = findViewById<TextView>(R.id.text_view)
-        textView.text = "Fizz Fizz Buzz Buzz ${fizzBuzz()}"
+        textView.text = "Fizz Fizz Buzz Buzz ${fizzBuzz(15)}"
         val result = fizzBuzz(3 )
-        print(result)
     }
 
-    fun fizzBuzz(number :Int) :String {
+    private fun fizzBuzz(number :Int) :String {
         return when {
             number % 3 == 0 && number % 5 ==0 -> "SheLookedSurprised"
             number % 3 == 0 -> "IToldMyWifeSheWasDrawing"
