@@ -65,29 +65,31 @@
         android:orientation="horizontal">
 
         <com.google.android.material.tabs.TabLayout
-            android:layout_width="match_parent"
+            app:tabIndicatorColor="@color/colorPrimary"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="731dp"
-            android:orientation="horizontal">
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#D80000"
-                android:icon="@drawable/ic_launcher_foreground"
-                android:text="@string/monday" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:icon="@drawable/ic_launcher_foreground"
-                android:text="@string/tuesday" />
+                android:text="@string/first" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:icon="@drawable/ic_launcher_foreground"
-                android:text="@string/wednesday" />
+                android:text="@string/second" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_launcher_foreground"
+                android:text="@string/third" />
+
         </com.google.android.material.tabs.TabLayout>
     </LinearLayout>
 
