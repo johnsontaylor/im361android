@@ -10,17 +10,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val textView = findViewById<TextView>(R.id.text_view)
-        textView.text = "Fizz Fizz Buzz Buzz ${fizzBuzz(15)}"
-        val result = fizzBuzz(3 )
+        //val textView = findViewById<TextView>(R.id.text_view)
+        //textView.text = "Fizz Fizz Buzz Buzz ${fizzBuzz(15)}"
+        //val result = fizzBuzz(3 )
     }
 
-    private fun fizzBuzz(number :Int) :String {
-        return when {
-            number % 3 == 0 && number % 5 ==0 -> "SheLookedSurprised"
-            number % 3 == 0 -> "IToldMyWifeSheWasDrawing"
-            number % 5 == 0 -> "HerEyebrowsTooHigh"
-        else -> "HAHAHA"
+    //private fun fizzBuzz(number :Int) :String {
+        //return when {
+            //number % 3 == 0 && number % 5 ==0 -> "SheLookedSurprised"
+            //number % 3 == 0 -> "IToldMyWifeSheWasDrawing"
+            //number % 5 == 0 -> "HerEyebrowsTooHigh"
+        //else -> "HAHAHA"
 
         }
         }
