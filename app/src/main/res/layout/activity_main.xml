@@ -24,7 +24,11 @@
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="139dp"
+            android:scaleType="fitXY"
+            tools:ignore="MissingConstraints"
+            android:accessibilityHeading="false"
+            android:adjustViewBounds="false"
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/chicken_option"
             app:srcCompat="@drawable/chicken" />
