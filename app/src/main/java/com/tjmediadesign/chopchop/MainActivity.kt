@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
         //val textView = findViewById<TextView>(R.id.text_view)
         //textView.text = "Fizz Fizz Buzz Buzz ${fizzBuzz(15)}"
         //val result = fizzBuzz(3 )
