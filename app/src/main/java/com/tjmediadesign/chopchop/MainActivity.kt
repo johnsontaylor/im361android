@@ -25,8 +25,4 @@ class MainActivity : AppCompatActivity() {
         //else -> "HAHAHA"
 
         }
-        }
 
-
-
-}
