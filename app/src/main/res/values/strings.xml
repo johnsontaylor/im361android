@@ -4,4 +4,7 @@
     <string name="burgers_option">burgers_option</string>
     <string name="pizza_option">pizza_option</string>
     <string name="sushi_option">sushi_option</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
 </resources>
