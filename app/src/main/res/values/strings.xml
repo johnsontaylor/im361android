@@ -10,4 +10,7 @@
     <string name="first">First</string>
     <string name="second">Second</string>
     <string name="third">Third</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="my_plate">My Plate</string>
+    <string name="account">Account</string>
 </resources>

@@ -75,20 +75,20 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/ic_launcher_foreground"
-                android:text="@string/first" />
+                android:icon="@drawable/resticon"
+                android:text="@string/restaurants" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/ic_launcher_foreground"
-                android:text="@string/second" />
+                android:icon="@drawable/plateicon"
+                android:text="@string/my_plate" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/ic_launcher_foreground"
-                android:text="@string/third" />
+                android:icon="@drawable/accicon"
+                android:text="@string/account" />
 
         </com.google.android.material.tabs.TabLayout>
     </LinearLayout>
