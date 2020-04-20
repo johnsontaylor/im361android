@@ -15,11 +15,11 @@ class MainActivity : FragmentActivity() {
 
         viewPager = findViewById(R.id.view_pager)
 
-        val adapter = MainActivityPAgerAdapter(this)
+        val adapter = MainActivityPagerAdapter(this)
         viewPager.adapter = adapter
 
     }
-    private abstract inner class MainActivityPagerAdapter(activity: FragmentActivity) : FragmentStateAdapter(activity) {
+    private inner class MainActivityPagerAdapter(activity: FragmentActivity) : FragmentStateAdapter(activity) {
         override fun getItemCount(): Int {
             return 3
         }
