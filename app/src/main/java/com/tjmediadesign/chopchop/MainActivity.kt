@@ -1,28 +1,32 @@
 package com.tjmediadesign.chopchop
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import androidx.viewpager2.widget.ViewPager2
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : FragmentActivity() {
+    lateinit var viewPager: ViewPager2
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        viewPager = findViewById(R.id.view_pager)
 
+        val adapter = MainActivityPAgerAdapter(this)
+        viewPager.adapter = adapter
 
-        //val textView = findViewById<TextView>(R.id.text_view)
-        //textView.text = "Fizz Fizz Buzz Buzz ${fizzBuzz(15)}"
-        //val result = fizzBuzz(3 )
     }
-
-    //private fun fizzBuzz(number :Int) :String {
-        //return when {
-            //number % 3 == 0 && number % 5 ==0 -> "SheLookedSurprised"
-            //number % 3 == 0 -> "IToldMyWifeSheWasDrawing"
-            //number % 5 == 0 -> "HerEyebrowsTooHigh"
-        //else -> "HAHAHA"
-
+    private abstract inner class MainActivityPagerAdapter(activity: FragmentActivity) : FragmentStateAdapter(activity) {
+        override fun getItemCount(): Int {
+            return 3
         }
+        override fun createFragment(position: Int): Fragment {
+            return RestListFragment()
+        }
+
+    }
+}
 
