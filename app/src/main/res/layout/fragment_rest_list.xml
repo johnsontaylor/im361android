@@ -22,7 +22,7 @@
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/chicken_option"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/chicken"
+            android:src="@drawable/chicken"
             tools:ignore="MissingConstraints" />
 
         <ImageButton
@@ -34,7 +34,7 @@
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/burgers_option"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/burgers"
+            android:src="@drawable/burgers"
             tools:ignore="MissingConstraints" />
 
         <ImageButton
@@ -46,7 +46,7 @@
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/pizza_option"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/pizza"
+            android:src="@drawable/pizza"
             tools:ignore="MissingConstraints" />
 
         <ImageButton
@@ -58,7 +58,7 @@
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/sushi_option"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/sushi" />
+            android:src="@drawable/sushi" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
