@@ -28,7 +28,7 @@ class MainActivity : FragmentActivity() {
 
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             if (position == 0) {
-                tab.text = "Restaurants"
+                tab.text = "Food Options"
 
                 tab.setIcon(R.drawable.resticon)
             }

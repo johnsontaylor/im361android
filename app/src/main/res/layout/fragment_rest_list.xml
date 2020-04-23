@@ -1,17 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Restaurants List"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="139dp"
+            android:accessibilityHeading="false"
+            android:adjustViewBounds="false"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/chicken_option"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/chicken"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="139dp"
+            android:accessibilityHeading="false"
+            android:adjustViewBounds="false"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/burgers_option"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/burgers"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="139dp"
+            android:accessibilityHeading="false"
+            android:adjustViewBounds="false"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/pizza_option"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/pizza"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="139dp"
+            android:accessibilityHeading="false"
+            android:adjustViewBounds="false"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/sushi_option"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/sushi" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
