@@ -23,7 +23,7 @@
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/chicken_option"
             android:scaleType="fitXY"
-            android:src="@drawable/myplatedarkheader"
+            android:src="@drawable/myplate"
             tools:ignore="MissingConstraints" />
 
         <ImageButton
