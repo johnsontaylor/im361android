@@ -23,7 +23,7 @@
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/chicken_option"
             android:scaleType="fitXY"
-            android:src="@drawable/MyPlate"
+            android:src="@drawable/MyPlateDark"
             tools:ignore="MissingConstraints" />
 
         <ImageButton
@@ -69,7 +69,7 @@
             android:id="@+id/paybutton"
             android:layout_width="match_parent"
             android:layout_height="67dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:accessibilityHeading="false"
             android:adjustViewBounds="false"
             android:background="@android:color/darker_gray"
