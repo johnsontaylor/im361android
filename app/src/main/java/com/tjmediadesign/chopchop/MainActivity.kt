@@ -37,7 +37,7 @@ class MainActivity : FragmentActivity() {
                 tab.setIcon(R.drawable.plateicon)
             }
             if (position == 2) {
-                tab.text = "Account"
+                tab.text = "Order History"
                 tab.setIcon(R.drawable.accicon)
             }
             tab.icon?.setColorFilter(whiteAccent, PorterDuff.Mode.SRC_ATOP)
