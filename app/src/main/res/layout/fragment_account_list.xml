@@ -52,5 +52,31 @@
             android:src="@drawable/menuitemtwo"
             tools:ignore="MissingConstraints" />
 
+        <ImageButton
+            android:id="@+id/menuitemthree"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="15dp"
+            android:accessibilityHeading="false"
+            android:adjustViewBounds="false"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/chicken_option"
+            android:scaleType="fitXY"
+            android:src="@drawable/menuitemthree"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/menuitemfour"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="15dp"
+            android:accessibilityHeading="false"
+            android:adjustViewBounds="false"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/chicken_option"
+            android:scaleType="fitXY"
+            android:src="@drawable/menuitemfour"
+            tools:ignore="MissingConstraints" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
