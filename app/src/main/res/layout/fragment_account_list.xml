@@ -27,57 +27,30 @@
             tools:ignore="MissingConstraints" />
 
         <ImageButton
-            android:id="@+id/FoodItemMyPlate"
+            android:id="@+id/menuitemone"
             android:layout_width="match_parent"
-            android:layout_height="139dp"
+            android:layout_height="125dp"
             android:layout_marginTop="15dp"
             android:accessibilityHeading="false"
             android:adjustViewBounds="false"
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/chicken_option"
             android:scaleType="fitXY"
-            android:src="@drawable/foodttemmyplate"
+            android:src="@drawable/menuitemone"
             tools:ignore="MissingConstraints" />
 
         <ImageButton
-            android:id="@+id/FoodItemTwoMyPlate"
+            android:id="@+id/menuitemtwo"
             android:layout_width="match_parent"
-            android:layout_height="139dp"
+            android:layout_height="125dp"
             android:layout_marginTop="15dp"
             android:accessibilityHeading="false"
             android:adjustViewBounds="false"
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/chicken_option"
             android:scaleType="fitXY"
-            android:src="@drawable/fooditemtwomyplateoption"
+            android:src="@drawable/menuitemtwo"
             tools:ignore="MissingConstraints" />
-
-        <ImageButton
-            android:id="@+id/tip"
-            android:layout_width="match_parent"
-            android:layout_height="152dp"
-            android:layout_marginTop="15dp"
-            android:accessibilityHeading="false"
-            android:adjustViewBounds="false"
-            android:background="@android:color/darker_gray"
-            android:contentDescription="@string/chicken_option"
-            android:scaleType="fitXY"
-            android:src="@drawable/tip"
-            tools:ignore="MissingConstraints" />
-
-        <ImageButton
-            android:id="@+id/paybutton"
-            android:layout_width="match_parent"
-            android:layout_height="67dp"
-            android:layout_marginTop="15dp"
-            android:accessibilityHeading="false"
-            android:adjustViewBounds="false"
-            android:background="@android:color/darker_gray"
-            android:contentDescription="@string/chicken_option"
-            android:scaleType="fitXY"
-            android:src="@drawable/paybutton"
-            tools:ignore="MissingConstraints" />
-
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
