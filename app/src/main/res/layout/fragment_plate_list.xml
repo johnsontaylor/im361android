@@ -23,7 +23,7 @@
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/chicken_option"
             android:scaleType="fitXY"
-            android:src="@drawable/MyPlateDark"
+            android:src="@drawable/myplatedarkheader"
             tools:ignore="MissingConstraints" />
 
         <ImageButton
@@ -36,7 +36,7 @@
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/chicken_option"
             android:scaleType="fitXY"
-            android:src="@drawable/FoodItemMyPlate"
+            android:src="@drawable/foodttemmyplate"
             tools:ignore="MissingConstraints" />
 
         <ImageButton
@@ -49,7 +49,7 @@
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/chicken_option"
             android:scaleType="fitXY"
-            android:src="@drawable/FoodItemTwoMyPlate"
+            android:src="@drawable/fooditemtwomyplateoption"
             tools:ignore="MissingConstraints" />
 
         <ImageButton
