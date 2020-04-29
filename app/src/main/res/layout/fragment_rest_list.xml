@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/FoodItemMyPlate"
+            android:id="@+id/imageButton1"
             android:layout_width="wrap_content"
             android:layout_height="139dp"
             android:accessibilityHeading="false"
