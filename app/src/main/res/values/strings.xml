@@ -18,4 +18,7 @@
     <string name="mcdonald_s_8_00">McDonald\'s $8.00</string>
     <string name="sweet_and_sour_sauce">Sweet and Sour Sauce</string>
     <string name="pizzabackground">pizzabackground</string>
+    <string name="medium_hand_tossed_pizza">Medium Hand Tossed Pizza</string>
+    <string name="pepperoni_mushrooms_extra_cheese">Pepperoni + Mushrooms + Extra Cheese</string>
+    <string name="domino_s_pizza_15_00">Domino\'s Pizza $15.00</string>
 </resources>
