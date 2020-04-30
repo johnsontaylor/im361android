@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.item_meal.view.*
 
 val myPlate =  mutableListOf<Meal>()
 
@@ -19,11 +20,11 @@ class PlateListFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(savedInstanceState)
+        super.onViewCreated(view, savedInstanceState)
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.recycycler_view)
 
-        GeneralRecycler<MealItem, Meal>(context[], recyclerView R . layout . item_meal, myPlate)
+        GeneralRecycler<MealItem, Meal>(context[], recyclerView, R.layout.item_meal, myPlate)
         view.textView.text = meal.name
     }
 

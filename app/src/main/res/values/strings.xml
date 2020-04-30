@@ -13,4 +13,5 @@
     <string name="restaurants">Restaurants</string>
     <string name="my_plate">My Plate</string>
     <string name="account">Account</string>
+    <string name="textview">TextView</string>
 </resources>

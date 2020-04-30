@@ -16,6 +16,5 @@ class MealItem : ConstraintLayout {
         super.onFinishInflate()
         textView = findViewById(R.id.meal_text_view)
     }
-
-        
+    
 }

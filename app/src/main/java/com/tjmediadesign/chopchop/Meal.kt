@@ -1,3 +1,3 @@
 package com.tjmediadesign.chopchop
 
-data class Meal
+data class Meal(val name: String)
