@@ -27,17 +27,17 @@ class RestListFragment : Fragment() {
         val button3 = view.findViewById<ImageButton>(R.id.imageButton3)
         val button4 = view.findViewById<ImageButton>(R.id.imageButton4)
 
-        button1.setOnClickListner {
-            myplate.add(meal("Chicken"))
+        button1.setOnClickListener {
+            myPlate.add(Meal("Chicken"))
         }
-        imageButton2.setOnClickListner {
-            myplate.add(meal("Burger"))
+        imageButton2.setOnClickListener {
+            myPlate.add(Meal("Burger"))
         }
-        button3.setOnClickListner {
-            myplate.add(meal("Pizza"))
+        button3.setOnClickListener {
+            myPlate.add(Meal("Pizza"))
         }
-        button3.setOnClickListner {
-            myplate.add(meal("sushi"))
+        button3.setOnClickListener {
+            myPlate.add(Meal("sushi"))
         }
     }
 
