@@ -2,23 +2,24 @@
 <com.tjmediadesign.chopchop.MealItem xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <ImageView
-    android:id="@+id/imageView"
-    android:layout_width="match_parent"
-    android:layout_height="139dp"
-    android:layout_marginTop="15dp"
-    android:accessibilityHeading="false"
-    android:adjustViewBounds="false"
-    android:background="@android:color/darker_gray"
-    android:contentDescription="@string/chicken_option"
-    android:scaleType="fitXY"
-    app:srcCompat="@drawable/foodtwo"
-    tools:ignore="MissingConstraints" />
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:layout_marginTop="15dp"
+        android:accessibilityHeading="false"
+        android:adjustViewBounds="false"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="@string/chicken_option"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/foodtwo"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/item_meal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_1_10_piece_chicken_mcnuggets"

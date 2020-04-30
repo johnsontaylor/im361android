@@ -6,9 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.item_meal.view.*
 
-val myPlate =  mutableListOf<Meal>()
+val myPlate =  mutableListOf<Meal>(
+Meal("Chicken")
+)
+
 
 class PlateListFragment : Fragment() {
     override fun onCreateView(
