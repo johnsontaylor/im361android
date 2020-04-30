@@ -4,29 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1. 10 Piece Chicken McNuggets"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="40dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="McDonald's $8.00"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="15dp" />
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sweet and Sour Sauce"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="80dp" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -39,4 +16,35 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/foodtwo"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1_10_piece_chicken_mcnuggets"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mcdonald_s_8_00"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="15dp" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sweet_and_sour_sauce"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="75dp" />
+
 </com.tjmediadesign.chopchop.MealItem>
