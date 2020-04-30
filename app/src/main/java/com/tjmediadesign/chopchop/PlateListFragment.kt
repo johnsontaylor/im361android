@@ -23,7 +23,9 @@ class PlateListFragment : Fragment() {
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.recycycler_view)
 
-        GeneralRecycler<MealItem, Meal>()
+        GeneralRecycler<MealItem, Meal>(context[], recyclerView R . layout . item_meal, myPlate)
+        view.textView.text = meal.name
+    }
 
     }
 
