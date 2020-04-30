@@ -13,12 +13,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
+        
         <ImageButton
             android:id="@+id/MyPlate"
             android:layout_width="wrap_content"
@@ -30,6 +25,11 @@
             android:scaleType="fitXY"
             android:src="@drawable/myplate"
             tools:ignore="MissingConstraints" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
         <ImageButton
             android:id="@+id/FoodItemMyPlate"
