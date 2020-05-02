@@ -16,7 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
@@ -29,7 +28,6 @@
             android:scaleType="fitXY"
             android:src="@drawable/foodtwo"
             tools:ignore="MissingConstraints" />
-
 
         <TextView
             android:id="@+id/textView2"
