@@ -5,49 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <LinearLayout
+        android:id="@+id/foodoptiononedescription"
         android:layout_width="match_parent"
-        android:layout_height="139dp"
-        android:layout_marginTop="15dp"
-        android:accessibilityHeading="false"
-        android:adjustViewBounds="false"
-        android:background="@android:color/darker_gray"
-        android:contentDescription="@string/chicken_option"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/foodtwo"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/item_meal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/_1_10_piece_chicken_mcnuggets"
-        android:textColor="@color/colorPrimary"
-        android:textSize="14sp"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="55dp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:layout_marginTop="15dp"
+            android:accessibilityHeading="false"
+            android:adjustViewBounds="true"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="@string/chicken_option"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/foodtwo"
+            tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mcdonald_s_8_00"
-        android:textColor="@color/colorPrimary"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="15dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mcdonald_s_8_00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="15dp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sweet_and_sour_sauce"
-        android:textColor="@color/colorPrimary"
-        android:textSize="14sp"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="75dp" />
+        <TextView
+            android:id="@+id/item_meal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_10_piece_chicken_mcnuggets"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="200dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sweet_and_sour_sauce"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="75dp" />
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/foodone"
@@ -67,7 +80,11 @@
         android:id="@+id/foodoptiontwodescription"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"></LinearLayout>
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     <TextView
         android:id="@+id/textView4"
@@ -78,6 +95,8 @@
         android:textSize="14sp"
         tools:layout_editor_absoluteX="15dp"
         tools:layout_editor_absoluteY="200dp" />
+
+
 
     <TextView
         android:id="@+id/textView5"
@@ -99,5 +118,7 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="15dp"
         tools:layout_editor_absoluteY="165dp" />
+
+    </LinearLayout>
 
 </com.tjmediadesign.chopchop.MealItem>
