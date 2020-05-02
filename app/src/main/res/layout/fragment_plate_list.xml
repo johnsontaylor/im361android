@@ -31,63 +31,70 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <ImageButton
-            android:id="@+id/tip"
-            android:layout_width="match_parent"
-            android:layout_height="152dp"
+        <TextView
+            android:id="@+id/tiptext"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/add_a_tip"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:layout_marginTop="15dp"
-            android:accessibilityHeading="false"
-            android:adjustViewBounds="false"
-            android:background="@android:color/darker_gray"
-            android:contentDescription="@string/chicken_option"
-            android:scaleType="fitXY"
-            android:src="@drawable/tip"
-            tools:ignore="MissingConstraints" />
+            android:layout_marginBottom="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#F37711"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:layout_height="152dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/tip1"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:backgroundTint="#F37711"
-            android:text="@string/_1"
-            android:textColor="@color/whiteAccent"
-            android:textSize="25sp" />
+            <Button
+                android:id="@+id/tip1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:backgroundTint="#F37711"
+                android:text="@string/_1"
+                android:textColor="@color/whiteAccent"
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle" />
 
-        <Button
-            android:id="@+id/tip2"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:backgroundTint="#4C1750"
-            android:text="@string/_2"
-            android:textColor="@color/whiteAccent"
-            android:textSize="25sp"
-            android:layout_marginStart="20dp"/>
+            <Button
+                android:id="@+id/tip2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#4C1750"
+                android:text="@string/_2"
+                android:textColor="@color/whiteAccent"
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle" />
 
-        <Button
-            android:id="@+id/tip3"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:backgroundTint="#F37711"
-            android:text="@string/_3"
-            android:textColor="@color/whiteAccent"
-            android:textSize="25sp"
-            android:layout_marginStart="20dp"/>
+            <Button
+                android:id="@+id/tip3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#F37711"
+                android:text="@string/_3"
+                android:textColor="@color/whiteAccent"
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle" />
 
-        <Button
-            android:id="@+id/tip4"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:backgroundTint="#F37711"
-            android:text="@string/_4"
-            android:textColor="@color/whiteAccent"
-            android:textSize="25sp"
-            android:layout_marginStart="20dp"/>
+            <Button
+                android:id="@+id/tip4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#F37711"
+                android:text="@string/_4"
+                android:textColor="@color/whiteAccent"
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle" />
 
         </LinearLayout>
 
