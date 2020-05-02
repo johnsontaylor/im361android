@@ -44,6 +44,12 @@
             android:src="@drawable/tip"
             tools:ignore="MissingConstraints" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
         <Button
             android:id="@+id/tip1"
             android:layout_width="65dp"
@@ -52,6 +58,38 @@
             android:text="@string/_1"
             android:textColor="@color/whiteAccent"
             android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/tip2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:backgroundTint="#4C1750"
+            android:text="@string/_2"
+            android:textColor="@color/whiteAccent"
+            android:textSize="25sp"
+            android:layout_marginStart="20dp"/>
+
+        <Button
+            android:id="@+id/tip3"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:backgroundTint="#F37711"
+            android:text="@string/_3"
+            android:textColor="@color/whiteAccent"
+            android:textSize="25sp"
+            android:layout_marginStart="20dp"/>
+
+        <Button
+            android:id="@+id/tip4"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:backgroundTint="#F37711"
+            android:text="@string/_4"
+            android:textColor="@color/whiteAccent"
+            android:textSize="25sp"
+            android:layout_marginStart="20dp"/>
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/paynowbutton"
