@@ -16,6 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
@@ -28,6 +29,7 @@
             android:scaleType="fitXY"
             app:srcCompat="@drawable/foodtwo"
             tools:ignore="MissingConstraints" />
+
 
         <TextView
             android:id="@+id/textView2"
@@ -59,7 +61,7 @@
             android:textSize="14sp"
             tools:layout_editor_absoluteX="15dp"
             tools:layout_editor_absoluteY="75dp" />
-        
+
     <ImageView
         android:id="@+id/foodone"
         android:layout_width="match_parent"
@@ -75,6 +77,17 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/domino_s_pizza_15_00"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -83,8 +96,6 @@
         android:textSize="14sp"
         tools:layout_editor_absoluteX="15dp"
         tools:layout_editor_absoluteY="200dp" />
-
-
 
     <TextView
         android:id="@+id/textView5"
@@ -95,17 +106,7 @@
         android:textSize="14sp"
         tools:layout_editor_absoluteX="15dp"
         tools:layout_editor_absoluteY="220dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/domino_s_pizza_15_00"
-        android:textColor="@color/colorPrimary"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="165dp" />
+        
 
     </LinearLayout>
 
