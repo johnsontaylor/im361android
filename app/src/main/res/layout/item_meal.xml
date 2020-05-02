@@ -27,7 +27,7 @@
             android:background="@android:color/darker_gray"
             android:contentDescription="@string/chicken_option"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/foodtwo"
+            android:src="@drawable/foodtwo"
             tools:ignore="MissingConstraints" />
 
 
@@ -106,7 +106,7 @@
         android:textSize="14sp"
         tools:layout_editor_absoluteX="15dp"
         tools:layout_editor_absoluteY="220dp" />
-        
+
 
     </LinearLayout>
 

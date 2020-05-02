@@ -32,32 +32,6 @@
             android:layout_height="match_parent" />
 
         <ImageButton
-            android:id="@+id/FoodItemMyPlate"
-            android:layout_width="match_parent"
-            android:layout_height="139dp"
-            android:layout_marginTop="15dp"
-            android:accessibilityHeading="false"
-            android:adjustViewBounds="false"
-            android:background="@android:color/darker_gray"
-            android:contentDescription="@string/chicken_option"
-            android:scaleType="fitXY"
-            android:src="@drawable/foodttemmyplate"
-            tools:ignore="MissingConstraints" />
-
-        <ImageButton
-            android:id="@+id/FoodItemTwoMyPlate"
-            android:layout_width="match_parent"
-            android:layout_height="139dp"
-            android:layout_marginTop="15dp"
-            android:accessibilityHeading="false"
-            android:adjustViewBounds="false"
-            android:background="@android:color/darker_gray"
-            android:contentDescription="@string/chicken_option"
-            android:scaleType="fitXY"
-            android:src="@drawable/fooditemtwomyplateoption"
-            tools:ignore="MissingConstraints" />
-
-        <ImageButton
             android:id="@+id/tip"
             android:layout_width="match_parent"
             android:layout_height="152dp"
@@ -70,18 +44,26 @@
             android:src="@drawable/tip"
             tools:ignore="MissingConstraints" />
 
-        <ImageButton
-            android:id="@+id/paybutton"
+        <Button
+            android:id="@+id/tip1"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:backgroundTint="#F37711"
+            android:text="@string/_1"
+            android:textColor="@color/whiteAccent"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/paynowbutton"
             android:layout_width="match_parent"
             android:layout_height="67dp"
-            android:layout_marginTop="15dp"
-            android:accessibilityHeading="false"
-            android:adjustViewBounds="false"
-            android:background="@android:color/darker_gray"
-            android:contentDescription="@string/chicken_option"
-            android:scaleType="fitXY"
-            android:src="@drawable/paybutton"
-            tools:ignore="MissingConstraints" />
+            android:layout_marginTop="13dp"
+            android:backgroundTint="#4C1750"
+            android:text="@string/pay_now_25_00"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteAccent"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
