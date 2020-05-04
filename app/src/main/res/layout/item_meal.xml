@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="156dp">
 
     <ImageView
         android:id="@+id/imageView"
@@ -13,22 +13,27 @@
         android:contentDescription="@string/chicken_option"
         android:scaleType="fitXY"
         android:src="@drawable/foodtwo"
-        app:layout_constraintBottom_toTopOf="@+id/foodoptiononedescription"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/foodoptiononedescription"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/mcdonald_s_8_00"
+            android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="25sp"
             android:textStyle="bold"
@@ -37,9 +42,10 @@
 
         <TextView
             android:id="@+id/item_meal"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/_1_10_piece_chicken_mcnuggets"
+            android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="14sp"
             tools:layout_editor_absoluteX="15dp"
@@ -47,9 +53,10 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sweet_and_sour_sauce"
+            android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="14sp"
             tools:layout_editor_absoluteX="15dp"
