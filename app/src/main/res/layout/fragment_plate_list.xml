@@ -6,110 +6,123 @@
     android:layout_height="match_parent"
     android:background="#EFEDED">
 
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/scrollview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:id="@+id/MyPlate"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:accessibilityHeading="false"
-            android:adjustViewBounds="false"
-            android:background="@android:color/darker_gray"
-            android:contentDescription="@string/chicken_option"
-            android:scaleType="fitXY"
-            android:src="@drawable/myplate"
-            tools:ignore="MissingConstraints" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TextView
-            android:id="@+id/tiptext"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="@string/add_a_tip"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#F37711"/>
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="152dp"
-            android:background="#FFFFFF"
-            android:backgroundTint="#FFFFFF"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/MyPlate"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:accessibilityHeading="false"
+                android:adjustViewBounds="false"
+                android:background="@android:color/darker_gray"
+                android:contentDescription="@string/chicken_option"
+                android:scaleType="fitXY"
+                android:src="@drawable/myplate"
+                tools:ignore="MissingConstraints" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tiptext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/add_a_tip"
+                android:textColor="#F37711"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tip1"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:backgroundTint="#F37711"
+                    android:text="@string/_1"
+                    android:textColor="@color/whiteAccent"
+                    android:textSize="25sp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/tip2"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="20dp"
+                    android:backgroundTint="#4C1750"
+                    android:text="@string/_2"
+                    android:textColor="@color/whiteAccent"
+                    android:textSize="25sp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/tip3"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="20dp"
+                    android:backgroundTint="#F37711"
+                    android:text="@string/_3"
+                    android:textColor="@color/whiteAccent"
+                    android:textSize="25sp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/tip4"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="20dp"
+                    android:backgroundTint="#F37711"
+                    android:text="@string/_4"
+                    android:textColor="@color/whiteAccent"
+                    android:textSize="25sp"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
 
             <Button
-                android:id="@+id/tip1"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:backgroundTint="#F37711"
-                android:text="@string/_1"
-                android:textColor="@color/whiteAccent"
-                android:textSize="25sp"
-                tools:ignore="ButtonStyle" />
-
-            <Button
-                android:id="@+id/tip2"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_marginStart="20dp"
+                android:id="@+id/paynowbutton"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_marginTop="13dp"
                 android:backgroundTint="#4C1750"
-                android:text="@string/_2"
+                android:text="@string/pay_now_25_00"
+                android:textAllCaps="false"
                 android:textColor="@color/whiteAccent"
-                android:textSize="25sp"
-                tools:ignore="ButtonStyle" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/tip3"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_marginStart="20dp"
-                android:backgroundTint="#F37711"
-                android:text="@string/_3"
-                android:textColor="@color/whiteAccent"
-                android:textSize="25sp"
-                tools:ignore="ButtonStyle" />
-
-            <Button
-                android:id="@+id/tip4"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:layout_marginStart="20dp"
-                android:backgroundTint="#F37711"
-                android:text="@string/_4"
-                android:textColor="@color/whiteAccent"
-                android:textSize="25sp"
-                tools:ignore="ButtonStyle" />
 
         </LinearLayout>
+    </ScrollView>
 
-        <Button
-            android:id="@+id/paynowbutton"
-            android:layout_width="match_parent"
-            android:layout_height="67dp"
-            android:layout_marginTop="13dp"
-            android:backgroundTint="#4C1750"
-            android:text="@string/pay_now_25_00"
-            android:textAllCaps="false"
-            android:textColor="@color/whiteAccent"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

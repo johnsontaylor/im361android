@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_rest_list.*
@@ -29,15 +30,19 @@ class RestListFragment : Fragment() {
 
         button1.setOnClickListener {
             myPlate.add(Meal("Chicken"))
+            Toast.makeText(context!!, "Added Chicken", Toast.LENGTH_SHORT).show()
         }
         imageButton2.setOnClickListener {
             myPlate.add(Meal("Burger"))
+            Toast.makeText(context!!, "Added Burger", Toast.LENGTH_SHORT).show()
         }
         button3.setOnClickListener {
             myPlate.add(Meal("Pizza"))
+            Toast.makeText(context!!, "Added Pizza", Toast.LENGTH_SHORT).show()
         }
         button3.setOnClickListener {
             myPlate.add(Meal("sushi"))
+            Toast.makeText(context!!, "Added Sushi", Toast.LENGTH_SHORT).show()
         }
     }
 
