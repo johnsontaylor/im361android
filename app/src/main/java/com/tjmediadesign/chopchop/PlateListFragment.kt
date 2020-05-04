@@ -7,9 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 
+
 val myPlate =  mutableListOf<Meal>(
-Meal("Chicken")
+    Meal("Chicken", "8.00", "McDonald's", R.drawable.foodtwo)
 )
+
+
 
 
 class PlateListFragment : Fragment() {
@@ -27,7 +30,10 @@ class PlateListFragment : Fragment() {
         val recyclerView = view.findViewById<RecyclerView>(R.id.recycycler_view)
 
         GeneralRecycler<MealItem, Meal>(context!!, recyclerView, R.layout.item_meal, myPlate) { view, meal ->
-            view.textView.text = meal.name
+            view.textView.text = meal.store
+            view.textView2.text = meal.food
+            view.textView3.text = meal.price
+            view.imageView.setImageResource(meal.bgImage)
         }
     }
 }
