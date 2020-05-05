@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 val myPlate =  mutableListOf<Meal>(
-    Meal("Chicken", "8.00", "McDonald's", R.drawable.foodtwo)
+
 )
 
 
