@@ -33,15 +33,15 @@ class RestListFragment : Fragment() {
             Toast.makeText(context!!, "Added Chicken", Toast.LENGTH_SHORT).show()
         }
         imageButton2.setOnClickListener {
-            myPlate.add(Meal("Burger", "$10.00", "Burger King", R.drawable.foodthree))
+            myPlate.add(Meal("Whopper & Fries Meal", "Burger Plain - $10.00", "Burger King", R.drawable.foodthree))
             Toast.makeText(context!!, "Added Burger", Toast.LENGTH_SHORT).show()
         }
         button3.setOnClickListener {
-            myPlate.add(Meal("Pizza", "$15.00", "Domino's", R.drawable.foodone))
+            myPlate.add(Meal("Medium Hand Tossed Pizza", "Pepperoni + Mushrooms - $15.00", "Domino's", R.drawable.foodone))
             Toast.makeText(context!!, "Added Pizza", Toast.LENGTH_SHORT).show()
         }
         button3.setOnClickListener {
-            myPlate.add(Meal("Sushi", "$25.00", "Shogun", R.drawable.foodfour))
+            myPlate.add(Meal("California Roll Meal", "4 Person Entree - $30.00", "Shogun", R.drawable.foodfour))
             Toast.makeText(context!!, "Added Sushi", Toast.LENGTH_SHORT).show()
         }
     }
