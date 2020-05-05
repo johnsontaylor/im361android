@@ -29,7 +29,7 @@ class RestListFragment : Fragment() {
         val button4 = view.findViewById<ImageButton>(R.id.imageButton4)
 
         button1.setOnClickListener {
-            myPlate.add(Meal("Chicken", "$8.00","McDonald's", R.drawable.foodone))
+            myPlate.add(Meal("Chicken", "$8.00","McDonald's", R.drawable.foodtwo))
             Toast.makeText(context!!, "Added Chicken", Toast.LENGTH_SHORT).show()
         }
         imageButton2.setOnClickListener {
