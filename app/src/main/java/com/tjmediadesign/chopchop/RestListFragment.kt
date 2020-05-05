@@ -29,10 +29,6 @@ class RestListFragment : Fragment() {
         val button3 = view.findViewById<ImageButton>(R.id.imageButton3)
         val button4 = view.findViewById<ImageButton>(R.id.imageButton4)
 
-        val button5 = view.findViewById<Button>(R.id.tip1)
-        val button6 = view.findViewById<Button>(R.id.tip2)
-        val button7 = view.findViewById<Button>(R.id.tip3)
-        val button8 = view.findViewById<Button>(R.id.tip4)
 
         button1.setOnClickListener {
             myPlate.add(Meal("10 Piece Chicken McNuggets", "Sweet and Sour Sauce - $8.00","McDonald's", R.drawable.foodtwo))
@@ -49,18 +45,6 @@ class RestListFragment : Fragment() {
         button4.setOnClickListener {
             myPlate.add(Meal("California Roll Meal", "4 Person Entree - $30.00", "Shogun", R.drawable.foodfour))
             Toast.makeText(context!!, "Added Sushi", Toast.LENGTH_SHORT).show()
-        }
-        button5.setOnClickListener {
-            Toast.makeText(context!!, "$1 Tip Added", Toast.LENGTH_SHORT).show()
-        }
-        button6.setOnClickListener {
-            Toast.makeText(context!!, "$2 Tip Added", Toast.LENGTH_SHORT).show()
-        }
-        button7.setOnClickListener {
-            Toast.makeText(context!!, "$3 Tip Added", Toast.LENGTH_SHORT).show()
-        }
-        button8.setOnClickListener {
-            Toast.makeText(context!!, "$4 Tip Added", Toast.LENGTH_SHORT).show()
         }
     }
 
