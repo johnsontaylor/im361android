@@ -49,6 +49,12 @@ class PlateListFragment : Fragment() {
         button8.setOnClickListener {
             Toast.makeText(context!!, "$4 Tip Added", Toast.LENGTH_SHORT).show()
         }
+
+        val payNowButton = view.findViewById<Button>(R.id.paynowbutton)
+
+        payNowButton.setOnClickListener {
+            myPlate.clear()
+        }
     }
 }
 

@@ -22,6 +22,7 @@
         android:id="@+id/foodoptiononedescription"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
